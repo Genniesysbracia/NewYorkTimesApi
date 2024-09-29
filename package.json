@@ -98,7 +98,7 @@
     "weak-lru-cache": "^1.2.2"
   },
   "scripts": {
-    "build": "parcel build --public-url https:Genniesysbracia.github.io/NewYorkTimesApi src/index.html",
+    "build": "parcel build --public-url https://Genniesysbracia.github.io/NewYorkTimesApi src/index.html",
     "start": "parcel serve src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
