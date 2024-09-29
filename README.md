@@ -1,1 +1,3 @@
 # NewYorkTimesApi
+
+Appsdev Midterm
