@@ -1,0 +1,291 @@
+@import "https://fonts.googleapis.com/css2?family=Prata&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fefae0;
+  margin: 10px;
+  font-family: Prata, serif;
+  line-height: 1.5;
+}
+
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: sticky;
+}
+
+.heading-container {
+  text-align: center;
+  background-color: #a6b37d;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 20px;
+  font-size: 2.5rem;
+  box-shadow: 4px 4px 4px -4px #0b0c0e;
+}
+
+.heading-container h2 {
+  color: #fff;
+}
+
+.sub-header {
+  border-top: 1px solid #000;
+  border-bottom: 2px solid #000;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.sub-header .article {
+  align-items: center;
+  margin-right: 10px;
+  display: flex;
+}
+
+.sub-header h3 {
+  text-align: center;
+  border-left: 1px solid #000;
+  gap: 15px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  font-family: auto;
+  font-size: 1.4rem;
+  list-style-type: none;
+  display: flex;
+}
+
+.sub-header span {
+  border-left: 1px solid #000;
+  margin-left: 10px;
+}
+
+.sub-header h3 :hover {
+  color: #1a3144;
+}
+
+.sub-header h2 {
+  margin: 0 10px 0 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.container {
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  height: auto;
+  padding: 20px;
+  display: grid;
+}
+
+.review-article {
+  background-color: bisque;
+  border: 2px solid #000;
+  grid-column: 1;
+  max-height: 500px;
+  padding: 10px;
+  box-shadow: 1px 2px 4px #00000017;
+}
+
+.card {
+  background-color: bisque;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px #00020480;
+}
+
+.card .bookTitle h3 {
+  border-top: 1px solid #000;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card .bookAuthor p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.card .bookDescription p {
+  color: #333;
+  font-size: .9rem;
+}
+
+.topArts {
+  background-color: #c0c78c;
+  border: 1px solid #000;
+  flex-direction: column;
+  padding: 10px;
+  display: flex;
+}
+
+.topArts h2 {
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.article-card {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  display: flex;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  font-family: auto;
+  box-shadow: 0 2px 8px #000;
+}
+
+.card h3 {
+  border-top: 1px solid #000;
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0 0 10px;
+  font-size: .9rem;
+}
+
+.card a {
+  color: #11581c;
+  border: 1px solid #000;
+  padding: 3px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #a6b37d;
+  padding: 20px;
+  font-family: auto;
+  font-weight: normal;
+}
+
+.footer img {
+  width: 100px;
+  height: auto;
+}
+
+.footer h2 {
+  font-size: 1.9rem;
+}
+
+@media only screen and (width <= 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .review-article {
+    max-height: auto;
+  }
+}
+
+@media only screen and (width <= 425px) {
+  .heading-container {
+    font-size: 1rem;
+  }
+
+  .sub-header ol {
+    gap: 10px;
+  }
+
+  .sub-header ol a {
+    font-size: 14px;
+  }
+
+  .container {
+    grid: 1fr;
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+  }
+
+  .review-article {
+    order: 1;
+  }
+
+  .topArts {
+    order: 2;
+  }
+
+  .article-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (width <= 375px) {
+  .heading-container {
+    font-size: 1.2rem;
+  }
+
+  .sub-header ol a {
+    font-size: .7rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+  }
+
+  .review-article {
+    order: 1;
+  }
+
+  .topArts {
+    order: 2;
+  }
+
+  .article-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (width <= 320px) {
+  .heading-container {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .sub-header ol a {
+    font-size: .9rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    display: flex;
+  }
+
+  .article-card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
